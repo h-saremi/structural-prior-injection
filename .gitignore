@@ -8,6 +8,10 @@ data/processed/*
 !data/processed/.gitkeep
 results/*
 !results/.gitkeep
+!results/*.json
+!results/*.txt
+!results/*.json
+!results/*.txt
 *.npy
 *.pkl
 *.pt

@@ -1,0 +1,10 @@
+Interpretability summary
+========================================
+
+H1 status: SUPPORTED
+  tau ratio:  1.033
+  delta rho:  +0.1694
+
+Volatility split:
+  delta (low vol):  +0.0839
+  delta (high vol): +0.0043

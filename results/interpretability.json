@@ -1,0 +1,42 @@
+{
+  "naive_vs_controlled": {
+    "none": {
+      "test_tau": 0.6624483784867107,
+      "rho_raw": -0.19013296154497344,
+      "rho_tilde": -0.0556285378016424
+    },
+    "input": {
+      "test_tau": 0.6709297279015753,
+      "rho_raw": -0.20314086780595,
+      "rho_tilde": 0.10998407517390374
+    },
+    "intermediate": {
+      "test_tau": 0.6844337124621214,
+      "rho_raw": -0.19366696932236332,
+      "rho_tilde": 0.11381549837049325
+    },
+    "output": {
+      "test_tau": 0.6694228455042612,
+      "rho_raw": -0.16196844569201943,
+      "rho_tilde": 0.1880431939220289
+    }
+  },
+  "hypothesis_1": {
+    "status": "SUPPORTED",
+    "tau_ratio": 1.0331879957584524,
+    "delta_rho": 0.16944403617213566,
+    "tau_ok": true,
+    "rho_ok": true
+  },
+  "volatility_split": {
+    "median_volatility": 0.3053613305091858,
+    "n_low": 102,
+    "n_high": 102,
+    "none_low": 0.5468841001747233,
+    "none_high": 0.6779957401121798,
+    "inter_low": 0.6307513104251601,
+    "inter_high": 0.6822638610927472,
+    "delta_low": 0.08386721025043675,
+    "delta_high": 0.004268120980567391
+  }
+}
