@@ -1,0 +1,42 @@
+seed: 42
+
+data:
+  dataset: CollegeMsg
+  url: "https://snap.stanford.edu/data/CollegeMsg.txt.gz"
+  filter_zero_out_degree: true
+
+diffusion:
+  model: SIR
+  beta: 0.2
+  mu: 0.1
+  n_runs: 1000
+  event_based_time: true
+
+features:
+  centrality: [out_deg, in_deg, betweenness, closeness, eigenvector, k_shell,
+               event_count, activity_span]
+  log_transform: [out_deg, in_deg, betweenness, eigenvector, event_count, activity_span]
+
+model:
+  hidden: 64
+  n_layers: 2
+  injection_level: intermediate
+  injection_layer: 1
+
+training:
+  epochs: 400
+  patience: 50
+  lr: 0.003
+  weight_decay: 0.00001
+  grad_clip: 1.0
+
+evaluation:
+  metrics: [kendall_tau, precision_at_k, spread_ratio, excess_attention]
+  top_k: [10, 50, 100]
+
+interpretability:
+  degree_control: log_out_degree
+
+paths:
+  data_dir: data
+  results_dir: results
